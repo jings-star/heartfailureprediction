@@ -46,8 +46,8 @@ if st.button('Predict'):
     try:
         prediction = model.predict(input_data)
         if prediction[0] == 0:
-            st.write("The patient is not likely to have heart disease!.")
+            st.write("The patient is not likely to have heart failure!.")
         else:
-            st.write("The patient is  likely to have heart disease!.")
+            st.write("The patient is  likely to have heart failure!.")
     except Exception as e:
         st.error(f"Error during prediction: {e}")
